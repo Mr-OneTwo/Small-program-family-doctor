@@ -1,0 +1,19 @@
+<!--pages/signManagment/signManagment.wxml-->
+<view>
+  <navigator class="card" url="../signAudit/signAudit">
+    <image src="../../images/fuhua.png" class="headPortrait"></image>
+    <view class="right">
+      <view class="name">付华 </view>
+      <view class="num">申请时间：2017-12-13</view>
+    </view>
+    <navigator hover-class="none" class="agree">同意</navigator>
+  </navigator>
+  <navigator class="card arrow_right" >
+    <image src="../../images/fuhua.png" class="headPortrait"></image>
+    <view class="right">
+      <view class="name">李四 </view>
+      <view class="num">申请时间：2017-12-13</view>
+    </view>
+    <navigator hover-class="none" class="agreed">已同意</navigator>
+  </navigator>
+</view>

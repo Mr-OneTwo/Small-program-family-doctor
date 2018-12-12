@@ -1,0 +1,66 @@
+<!--pages/doctorIndex/doctorIndex.wxml-->
+<view class="first">
+  <navigator class="card arrow_right" url="../signManagment/signManagment">
+    <image class="img" mode="widthFix" src="../../images/signManagement.png"></image>
+    <view class="right">
+      <view class="fir">签约管理 </view>
+      <view class="sec">新的签约申请</view>
+    </view>
+    <view class="label">1</view>
+  </navigator>
+  <navigator class="card arrow_right" url="../tohome/tohome">
+    <image class="img" mode="widthFix" src="../../images/tohome.png"></image>
+    <view class="right">
+      <view class="fir">上门服务审批 </view>
+       <view class="sec">新的上门服务申请</view> 
+    </view>
+    <view class="label">1</view>
+  </navigator>
+</view>
+
+<view class="first">
+  <navigator class="card arrow_right" url="">
+    <image class="img" mode="widthFix" src="../../images/invite.png"></image>
+    <view class="right">
+      <view class="fir">邀请签约 </view>
+      <view class="sec">面对面签约居民</view>
+    </view>
+  </navigator>
+  <navigator class="card arrow_right" url="../todo/todo">
+    <image class="img" mode="widthFix" src="../../images/todo.png"></image>
+    <view class="right">
+      <view class="fir">待办任务</view>
+      <view class="sec">查看上门服务等待办事宜</view>
+    </view>
+  </navigator>
+</view>
+<!-- 下面聊天 -->
+<view class="second">
+  <navigator class="card" url="../healthAsk/healthAsk">
+    <image class="img" mode="widthFix" src="../../images/fuhua.png"></image>
+    <view class="right">
+      <view class="one">
+        <text class="name">付华</text>
+        <text class="time">上午8:18</text>
+      </view>
+      <view class="two">
+        <text class="dialogue">医生你好，我最近有点不舒服，起床感觉眩晕</text>
+        <text class="sec_label">6</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="card" url="../healthAsk/healthAsk">
+    <image class="img" mode="widthFix" src="../../images/fuhua.png"></image>
+    <view class="right">
+      <view class="one">
+        <text class="name">付好</text>
+        <text class="time">上午8:18</text>
+      </view>
+      <view class="two">
+        <text class="dialogue"><text class="blue">[健康提醒] </text>Ta近期有糖尿病随访，请关注</text>
+        <text class="sec_label">6</text>
+      </view>
+    </view>
+  </navigator>
+
+</view>

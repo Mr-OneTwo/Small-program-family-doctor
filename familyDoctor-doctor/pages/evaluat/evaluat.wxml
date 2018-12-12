@@ -1,0 +1,37 @@
+<!--pages/evaluat/evaluat.wxml-->
+
+<!--evaluatDoctor.wxml-->
+<view class='evaluatDoctor'>
+      <view class='list clearfix'>
+             <view class='fl'>满意度</view>
+             <!-- 星星评价start -->
+             <view class='pj_stars clearfix'>
+                   <view class="mystar">
+                      <view  class="guding zan-c-red star_img">
+                        <image class="star-image" src="../../images/pj_star_on.png"  ></image>
+                      </view>
+                      <view  class="guding zan-c-red star_img">
+                        <image class="star-image" src="../../images/pj_star_on.png"  ></image>
+                      </view>
+                      <view  class="guding zan-c-red star_img">
+                        <image class="star-image" src="../../images/pj_star_on.png"  ></image>
+                      </view>
+                      <view  class="guding zan-c-red star_img">
+                        <image class="star-image" src="../../images/pj_star_on.png"  ></image>
+                      </view>
+                      <view  class="guding zan-c-red star_img">
+                        <image class="star-image" src="../../images/pj_star.png"  ></image>
+                      </view>
+                  </view>
+                  <!--★-->
+                  <text class="zan-c-gray-dark text-star">{{starMap[star-1]}}</text>
+             </view> 
+             <!-- 星星评价end -->
+      </view>
+      <view class='list'>
+             <view>评价描述:</view>
+      </view>
+      <view class='list'>
+             医生很尽职尽责，我很满意，问题都得到了解决！
+      </view>
+</view>

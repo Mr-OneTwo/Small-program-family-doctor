@@ -1,0 +1,55 @@
+/* pages/signManagment/signManagment.wxss */
+
+
+.headPortrait{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.letter{
+  padding:10rpx 24rpx;
+  font-size:24rpx;
+}
+.card{
+  background:#fff;
+  position:relative;
+  padding:24rpx ;
+  display:flex;
+  align-items:center;
+  border-top:1rpx solid #F3F3F3;
+}
+.right{
+  position:absolute;
+  left:130rpx;
+  right:120rpx;
+  top:24rpx;
+}
+.name{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:30rpx;
+}
+.num{
+  color:#9E9E9E;
+  font-size:26rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.agree{
+  position:absolute;
+  right:30rpx;
+  padding:8rpx 20rpx;
+  color:#fff;
+  background:#1CBD94;
+  border-radius:8rpx;
+  display:inline-block;
+  font-size:24rpx;
+}
+.agreed{
+  color:#9E9E9E;
+  position:absolute;
+  right:50rpx;
+  font-size:26rpx;
+}

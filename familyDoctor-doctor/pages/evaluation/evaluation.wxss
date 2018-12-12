@@ -1,0 +1,9 @@
+/* pages/evaluation/evaluation.wxss */
+.evaluat{margin-top: 20rpx; background-color: #fff;}
+.main_text{border-top: 1px solid #dfdfdf;padding: 24rpx; color: #666;}
+
+.pjxq{display: flex; align-items: center; color: #999999; margin-bottom: 16rpx;}
+.touxiang{flex: 1; justify-content: center;}
+.touxiang .img{width: 58rpx; height: 58rpx; margin-right: 20rpx; margin-top: 12rpx;border-radius:50%;}
+.pj_s_cont image{width: 36rpx; height: 34rpx; margin: 0 4rpx;}
+.pjxq .name{color: #333;font-size: 30rpx; line-height: 44rpx;}

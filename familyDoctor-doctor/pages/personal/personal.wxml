@@ -1,0 +1,41 @@
+<!--pages/personal/personal.wxml-->
+<view class="personal">
+  <view class="top">
+    <image src="../../images/doctor.png" class="doctor" mode="widthFix"></image>
+    <view class="right">
+      <view class="name">丁海华
+        <text class="work">全科医生</text>
+      </view>
+      <view class="address">咸嘉湖社区卫生服务中心</view>
+    </view>
+    <image src="../../images/top.jpg" mode="widthFix" class="bac"></image>
+  </view>
+<!-- 数据展示 -->
+  <view class="data">
+    <navigator class="fir" url="../index/index">
+      <view class="num">231</view>
+      <text class="oth">签约居民</text>
+    </navigator>
+    <navigator class="fir" url="">
+      <view class="num">156</view>
+      <text class="oth">重点人群</text>
+    </navigator>
+    <navigator class="fir" url="../evaluation/evaluation">
+      <view class="num">31</view>
+      <text class="oth">居民评价</text>
+    </navigator>
+  </view>
+ <!-- 列表 -->
+  <view class="list_personal">
+    <block wx:for="{{list_personal}}" wx:key="" >
+      <navigator url="{{item.url}}" class="li">
+        <view class="bord arrow_right">
+            <image src="{{item.img}}" class="li_img" mode="widthFix"></image>
+            <text class="li_text">{{item.text}}</text>
+        </view>
+      </navigator> 
+    </block>
+  </view>
+  <button class="btn">退出</button>
+</view>
+

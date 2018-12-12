@@ -1,0 +1,21 @@
+<!--pages/login/login/login.wxml-->
+<form>
+  <view class="content">
+    <view class="li">
+      <text class="tit">用户</text>
+      <view class="input">
+        <input type="text" placeholder="请输入手机号码" class="input_txt"></input>
+      </view>
+    </view>
+    <view class="li">
+      <text class="tit">密码</text>
+      <view class="input">
+        <input type="password" placeholder="请输入登录密码" class="input_txt"></input>
+      </view>
+    </view>
+    <button class="btn" hover-class="btn_hover">登录</button>
+    <view class="jump">
+      <navigator class="jump_b" url="../forgetPassword/forgetPassword" hover-class="none">忘记密码</navigator>
+    </view>
+  </view>
+</form>

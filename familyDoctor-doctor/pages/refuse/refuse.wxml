@@ -1,0 +1,33 @@
+<!--pages/refuse/refuse.wxml-->
+<view class="txt">
+  <view class="name">张三三</view>
+  <view class="time">2018nian 04月12日   15:20</view>
+  <view class="describe">测量血压/心电图/床旁护理</view>
+</view>
+
+<view>
+  <navigator class="li arrow_right">
+      <view class="refuse">拒绝理由</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class=" choose">
+        <view class="picker">{{array[index]}}</view>
+      </picker>
+  </navigator>
+
+  
+
+  <view class="li">
+      <view class="refuse">退款金额</view>
+      <view class="choose">￥0</view>
+  </view>
+  <view class="li_ano">
+      <view class="refuse">理由说明</view>
+      <view class="input">
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="可不填"  cursor-spacing="30"  class="input_fa"/>
+      </view>
+  </view>
+</view>
+
+<view class="btn">
+  <navigator class="no" url="../refuse/refuse">取消</navigator>
+  <navigator class="yes">确定</navigator>
+</view>

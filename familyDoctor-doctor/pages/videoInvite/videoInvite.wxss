@@ -1,0 +1,4 @@
+/* pages/videoInvite/videoInvite.wxss */
+
+@import "../video/video.wxss";
+

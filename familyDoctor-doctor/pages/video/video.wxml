@@ -1,0 +1,18 @@
+<!--pages/video/video.wxml-->
+<view class="win">
+  <view class="infor">
+    <image src="../../images/doctor.png" class="portrait" mode="widthFix"></image>
+    <view class="right">
+      <view class="name">张医生</view>
+      <view>正在等待对方接受邀请...</view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="around">
+      <navigator class="circle" url="../healthAsk/healthAsk">
+        <image mode="widthFix" src="../../images/close.png" class="close_phone"></image>
+      </navigator>
+      <view class="cen">取消</view>
+    </view>
+  </view>
+</view>

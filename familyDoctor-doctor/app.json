@@ -1,0 +1,72 @@
+{
+  "pages":[
+    "pages/JuneNewAdded/scan/scan",
+    "pages/JuneNewAdded/signing/signing",
+    "pages/JuneNewAdded/residentsType/residentsType",
+    "pages/JuneNewAdded/signInput/signInput",
+    "pages/JuneNewAdded/alert/alert",
+    "pages/JuneNewAdded/contractService/contractService",
+    "pages/JuneNewAdded/applicationRecord/applicationRecord",
+    "pages/JuneNewAdded/applicationDetails/applicationDetails",
+    "pages/JuneNewAdded/address/address",
+    "pages/signAudit/signAudit",
+    "pages/tohomeRecode/tohomeRecode",
+    "pages/doctorIndex/doctorIndex",
+    "pages/protocol/protocol",
+    "pages/healthRemind/healthRemind",
+    "pages/login/loginDoctor/loginDoctor",
+    "pages/label/label",
+    "pages/peopleHome/peopleHome",
+    "pages/personal/personal",
+    "pages/publicRemind/publicRemind",
+    "pages/refuse/refuse",
+    "pages/signManagment/signManagment",
+    "pages/gotohome/gotohome",
+    "pages/signPeople/signPeople",
+    "pages/signatureDetails/signatureDetails",
+    "pages/todo/todo",
+    "pages/tohome/tohome",
+    "pages/evaluation/evaluation",
+    "pages/evaluat/evaluat",
+    "pages/tohomeRecode_T/tohomeRecode_T",
+    "pages/videoing/videoing",
+    "pages/video/video",
+    "pages/videoInvite/videoInvite",
+    "pages/healthAsk/healthAsk",
+    "pages/noData/noData",
+    "pages/login/forgetPassword/forgetPassword",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "家庭医生",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#8f8f8f",
+    "selectedColor": "#00b4a4",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/doctorIndex/doctorIndex",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_2.png",
+        "text": "家庭医生"
+      },
+      {
+        "pagePath": "pages/signPeople/signPeople",
+        "iconPath": "images/sign.png",
+        "selectedIconPath": "images/sign_2.png",
+        "text": "签约居民"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/personal.png",
+        "selectedIconPath": "images/personal_2.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
+

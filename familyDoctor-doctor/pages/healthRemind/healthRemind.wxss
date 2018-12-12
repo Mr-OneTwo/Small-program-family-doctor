@@ -1,0 +1,65 @@
+/* pages/HReminder/HRminder.wxss */
+ .tab{
+  width: 100%;
+  box-shadow:0 2rpx 4rpx 3rpx #C4C3C8;
+  background-color: #FFFFFF; 
+  height:80rpx;
+  display: flex;
+  position:absolute;
+  top:1rpx;
+  }
+.li{
+  flex: 1;
+  text-align:center; 
+  line-height: 80rpx;
+  } 
+
+on{
+  color: #4cd994; 
+  border-bottom: 2rpx solid #4cd994;
+  }
+
+
+  .on{
+    border-bottom:5rpx solid #40D2BA;
+    color:#40D2BA;
+  } 
+
+  /* 以下是内容 */
+.box{
+  padding-top:80rpx;
+}
+.card{
+  width:90%;
+  margin:40rpx auto;
+  background:#fff;
+  border-radius:8rpx;
+  box-shadow:0 3rpx 5rpx 3rpx #C4C3C8;
+  margin-bottom:24rpx;
+  min-height:255rpx;
+  display:block;
+  padding-bottom:12rpx;
+}
+.card_title{
+  line-height:88rpx;
+  border-bottom:1rpx solid #F3F3F3;
+  padding:0 24rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  color:#666;
+}
+.content{
+  width:85%;
+  margin:12rpx auto;
+}
+.content .text{
+  line-height:60rpx;
+  font-size:26rpx;
+}
+.green{
+  color:#40D2BA;
+}
+.red{
+  color:#EA2933;
+}

@@ -1,0 +1,8 @@
+<!--pages/JuneNewAdded/alert/alert.wxml-->
+<view class="mask">
+    <view class="alert_wind">
+      <navigator class="li" url=""  >1年</navigator>
+      <navigator class="li" url=""  >2年</navigator>
+      <navigator class="li" url=""  >3年</navigator>
+    </view>
+</view>

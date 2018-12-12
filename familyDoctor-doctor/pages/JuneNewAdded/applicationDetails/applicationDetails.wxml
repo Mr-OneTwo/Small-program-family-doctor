@@ -1,0 +1,54 @@
+<!--pages/tohomeRecode/tohomeRecode.wxml-->
+<view>
+  <view class='conlumn'>
+      <view class='list'>
+          <view class='title'>姓名</view>
+          <view class='infor'>张三三</view>
+      </view>
+      <view class='list'>
+          <view class='title'>身份证</view>
+          <view class='infor'>431102198629288612</view>
+      </view>
+      <view class='list'>
+          <view class='title'>本人号码</view>
+          <view class='infor'>156896931231</view>
+      </view>
+      <view class='list'>
+          <view class='title'>家庭住址</view>
+          <view class='infor'>监利县白螺镇***乡**村</view>
+      </view>
+      <view class='list'>
+          <view class='title'>居民类型</view>
+          <view class='infor'>正常人群</view>
+      </view>
+  </view>
+  <view class='conlumn'>
+      <view class='list'>
+          <view class='title'>签约时间</view>
+          <view class='infor'>2018-08-09</view>
+      </view>
+      <view class='list'>
+          <view class='title'>签约周期</view>
+          <view class='infor'>一年</view>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>签约服务项目</view>
+          <view class='infor marginright'>初级包/基础服务包</view>
+      </view>
+      <view class='list'>
+          <view class='title'>申请日期</view>
+          <view class='infor'>2018-08-09</view>
+      </view>
+      <view class='list'>
+          <view class='title'>状态</view>
+          <view class='infor'>
+            <view>审核不通过</view>
+            <view>没有合照</view>
+          </view>
+      </view>
+  </view>
+</view>
+
+<view class="btn">
+  <navigator class="yes">重新申请</navigator>
+</view>

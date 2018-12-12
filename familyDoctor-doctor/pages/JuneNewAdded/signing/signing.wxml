@@ -1,0 +1,46 @@
+<!--pages/tohomeRecode/tohomeRecode.wxml-->
+<view>
+  <view class='conlumn'>
+      <view class='list '>
+          <view class='title'>姓名</view>
+          <view class='infor'>张三三</view>
+      </view>
+      <view class='list '>
+          <view class='title'>身份证</view>
+          <view class='infor'>43110219860906612</view>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>本人号码</view>
+          <view class='infor'>15896931231</view>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>家庭住址</view>
+          <navigator class="infor" url="../address/address"  hover-class="none">监利县白螺镇***乡***村</navigator>
+      </view>
+  </view>
+  <view class='conlumn'>
+      <view class='list arrow_right'>
+          <view class='title'>居民类型</view>
+          <navigator class="infor" url="../residentsType/residentsType"  hover-class="none">正常人群</navigator>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>签约时间</view>
+          <view class='infor'>2018-08-09</view>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>签约周期</view>
+          <navigator class="infor" url="../alert/alert"  hover-class="none">一年</navigator>
+      </view>
+      <view class='list arrow_right'>
+          <view class='title'>签约服务项目</view>
+          <navigator class="infor" url="../contractService/contractService"  hover-class="none">初级包</navigator>
+      </view>
+  </view>
+  <view class="conlumn takePic">
+    <image src="../../../images/photo.png" class="photo"></image>
+    <image src="../../../images/photo_2.png" class="photo"></image>
+  </view> 
+</view>
+<view class="btn">
+  <navigator class="yes">提交申请</navigator>
+</view>

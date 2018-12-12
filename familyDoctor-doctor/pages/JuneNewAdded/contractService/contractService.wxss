@@ -1,0 +1,78 @@
+/* pages/JuneNewAdded/contractService/contractService.wxss */
+.content{
+  position:absolute;
+  top:48px;
+  width:100%;
+  bottom:0;
+}
+.leftmenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #e2e2e2;
+    overflow-y: auto;
+    width: 40%;
+    right: 60%;
+}
+.submenu{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    bottom: 0;
+    right: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.li{
+  padding:24rpx 0;
+}
+.li_active{
+  padding:24rpx 0;
+  background:#fff;
+}
+.fir_tittle{
+    color: #333333;
+    line-height:44rpx;
+    font-size: 28rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 20rpx;
+}
+.sec_tittle{
+    color: #666666;
+    font-size: 26rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 20rpx;
+}
+.ul{
+  margin-left:24rpx;
+}
+.icon{
+    position: absolute;
+    right: 24rpx;
+    top: 50%;
+    margin-top: -17rpx;
+    display: block;
+    width: 34rpx;
+    height:34rpx;
+    border:1rpx solid #e2e2e2;
+    border-radius:50%;
+}
+.name{
+  margin-right:80rpx;
+}
+.lit{
+    background: #fff;
+    padding: 20rpx 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    height: 88rpx;
+}

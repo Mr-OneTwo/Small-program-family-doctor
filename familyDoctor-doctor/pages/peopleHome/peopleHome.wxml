@@ -1,0 +1,50 @@
+<!--pages/peopleHome/peopleHome.wxml-->
+<view>
+  <navigator class="top arrow_right">
+    <image src="../../images/fuhua.png" class="doctor" mode="widthFix"></image>
+    <view class="right">
+      <view class="name">付华
+        <text class="work">男 40岁</text>
+      </view>
+        <view class="address">
+        <text class="label">高血压</text>
+        <text class="label">老年人</text>
+      </view>  
+    </view>
+    <image src="../../images/top.jpg" mode="widthFix" class="bac"></image>
+  </navigator>
+  <navigator class="lavel_fa arrow_right" url="../label/label">
+      <text class="vertical_line"></text>
+      设置重点人群标签
+  </navigator>
+  <navigator class="lavel_fa arrow_right" url="../signatureDetails/signatureDetails">
+      <text class="vertical_line"></text>
+      签约详情
+  </navigator>
+  <view class="content">
+    <view class="title"><text class="vertical_line"></text>健康档案</view>
+    <view class="health">
+      <view class="li">
+        <text class="dian"></text>
+        <text class="time">2018.01.01 </text>
+        <text class="li_cont">高血压随访</text>
+      </view>
+      <view class="li">
+        <text class="dian"></text>
+        <text class="time">2018.12.31</text>
+        <text class="li_cont">门诊</text>
+      </view>
+      <view class="li">
+        <text class="dian"></text>
+        <text class="time">2018.10.03</text>
+        <text class="li_cont">住院</text>
+      </view>
+    </view>
+    <navigator class="more" url="">显示更多
+      <image src="../../images/to_more.png" class="to_bottom" mode="widthFix"></image>
+    </navigator>
+  </view>
+</view>
+<view class="bottom_btn">
+  <navigator class="mess" url="../healthAsk/healthAsk">发消息</navigator>
+</view>

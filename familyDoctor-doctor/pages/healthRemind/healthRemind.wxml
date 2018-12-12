@@ -1,0 +1,41 @@
+<!--pages/HReminder/HRminder.wxml-->
+<view>
+  <!-- 以下为选项卡切换 -->
+  <view class="tab swiper-tab"> 
+    <view class="li swiper-tab-item {{currentTab ==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+      近一周 
+    </view>
+    <view class="li swiper-tab-item {{currentTab ==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+       近一月
+    </view>
+    <view class="li swiper-tab-item {{currentTab ==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+      全部
+    </view> 
+  </view>
+
+  <!-- 以下为内容切换 -->
+<view class="box">
+  <view wx:if="{{currentTab==0}}" class="box_week"> 
+    <navigator class="card">
+      <view class="card_title"><text class="green">[ 健康提醒 ] </text>  Ta近期有糖尿病随访，请关注 </view>
+      <view class="content">
+        <view class="text">计划日期： 2018年1月10日到2018年2月1日</view>
+        <view class="text">计划内容：糖尿病随访（第四次）</view>
+      </view>
+    </navigator>
+    <navigator class="card">
+      <view class="card_title"><text class="green">[ 健康提醒 ] </text>  发现Ta有异常指标，请关注 </view>
+      <view class="content">
+        <view class="text">异常日期： 2017年12月31日</view>
+        <view class="text">异常来源： 糖尿病随访</view>
+        <view class="text">异常指标： 空腹血糖 <text class="red">  ↑ </text>11.1mmo/L  </view>
+      </view>
+    </navigator>
+  </view>
+  <view wx:if="{{currentTab==1}}"  class="box_month">近一月健康提醒</view>
+  <view wx:if="{{currentTab==2}}"  class="box_year">全部健康提醒</view>
+</view>
+
+
+
+</view>

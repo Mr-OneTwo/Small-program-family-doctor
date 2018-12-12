@@ -1,0 +1,67 @@
+<!--pages/todo/todo.wxml-->
+<!--pages/HReminder/HRminder.wxml-->
+<view>
+  <!-- 以下为选项卡切换 -->
+  <view class="tab swiper-tab"> 
+    <view class="li swiper-tab-item {{currentTab ==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+      接下来7天 
+    </view>
+    <view class="li swiper-tab-item {{currentTab ==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+       本月
+    </view>
+    <view class="li swiper-tab-item {{currentTab ==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+      全部
+    </view> 
+  </view>
+
+  <!-- 以下为内容切换 -->
+<view class="box">
+  <view wx:if="{{currentTab==0}}" class="box_week"> 
+    <!-- 列表 -->
+    <view class="list_personal">
+      <block wx:for="{{list_personal}}" wx:key="" >
+        <navigator url="{{item.url}}" class="{{item.fa}}">
+          <view class="bord">
+              <image src="{{item.img}}" class="li_img" mode="widthFix"></image>
+              <text class="li_text">{{item.text}}</text>
+              <text class="num">{{item.num}}</text>
+          </view>
+        </navigator> 
+      </block>
+    </view>
+  </view>
+  
+  <view wx:if="{{currentTab==1}}"  class="box_month">
+      <!-- 列表 -->
+    <view class="list_personal">
+      <block wx:for="{{list_personal_2}}" wx:key="" >
+        <navigator url="{{item.url}}" class="{{item.fa}}">
+          <view class="bord">
+              <image src="{{item.img}}" class="li_img" mode="widthFix"></image>
+              <text class="li_text">{{item.text}}</text>
+              <text class="num">{{item.num}}</text>
+          </view>
+        </navigator> 
+      </block>
+    </view>
+  </view>
+  <view wx:if="{{currentTab==2}}"  class="box_year">
+      <!-- 列表 -->
+    <view class="list_personal">
+      <block wx:for="{{list_personal}}" wx:key="" >
+        <navigator url="{{item.url}}" class="{{item.fa}}">
+          <view class="bord">
+              <image src="{{item.img}}" class="li_img" mode="widthFix"></image>
+              <text class="li_text">{{item.text}}</text>
+              <text class="num">{{item.num}}</text>
+          </view>
+        </navigator> 
+      </block>
+    </view>
+  </view>
+</view>
+
+
+
+</view>
+

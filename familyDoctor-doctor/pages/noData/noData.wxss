@@ -1,0 +1,13 @@
+/* pages/noDta/noData.wxss */
+.noData_fa{
+  width:60%;
+  margin:50rpx auto;
+}
+.noData{
+  width:100%;
+  height:auto;
+}
+.noData_txt{
+  text-align:center;
+  font-size:30rpx;
+}

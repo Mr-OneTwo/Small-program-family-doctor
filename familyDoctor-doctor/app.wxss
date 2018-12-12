@@ -1,0 +1,50 @@
+/**common.wxss**/
+@import "plugins/weui.wxss";
+/* reset */
+page {
+  background-color: #f5f5f5;
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*以下为a标签的跳转小箭头*/
+/* 右箭头 */
+
+.arrow_right:after {
+  content: " ";
+  display: inline-block;
+  height: 14rpx;
+  width: 14rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 24rpx;
+}
+.arrow_right{position: relative;}
+
+/*清除浮动*/
+.clear:after {content: "\0020";display: block;height: 0;clear: both;}
+button{
+  margin:0;
+  padding:0;
+  outline:none;
+  border-radius:0;
+}
+
+/* 按钮的外灰色框 */
+button:after{
+border:0
+}
+
+.fl{
+  float:left;
+}
+
+.btn_hover{
+  background:#34AD9D;
+}

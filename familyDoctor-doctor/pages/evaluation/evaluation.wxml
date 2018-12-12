@@ -1,0 +1,33 @@
+<!--pages/evaluation/evaluation.wxml-->
+<view class='evaluat'>
+       <view class='main_text'>
+                <view class='pjxq'>
+                      <view class='touxiang clearfix'>
+                            <image src='../../images/fuhua.png' class='img fl'></image>
+                            <view class='colum_box fl'>
+                                  <view class='name'>付华</view>
+                                  <view class='data'>2016.5.10</view>
+                            </view>
+                      </view>
+                      <view class='pj_s_cont'>
+                          <image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star.png'></image><image src='../../images/pj_star.png'></image>
+                      </view>
+                </view>
+                <text class='text'>医生讲解非常详细，回复也很及时，让我及时知道去哪里就诊，谢谢医生.</text>
+        </view>
+        <view class='main_text'>
+                <view class='pjxq'>
+                      <view class='touxiang clearfix'>
+                            <image src='../../images/fuhua.png' class='img fl'></image>
+                            <view class='colum_box fl'>
+                                  <view class='name'>付华</view>
+                                  <view class='data'>2016.5.10</view>
+                            </view>
+                      </view>
+                      <view class='pj_s_cont'>
+                          <image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star_on.png'></image><image src='../../images/pj_star.png'></image><image src='../../images/pj_star.png'></image>
+                      </view>
+                </view>
+                <text class='text'>医生讲解非常详细，回复也很及时，让我及时知道去哪里就诊，谢谢医生.</text>
+        </view>
+</view>

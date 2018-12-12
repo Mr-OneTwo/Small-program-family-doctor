@@ -1,0 +1,19 @@
+<!--pages/publicRemind/publicRemind.wxml-->
+<view class="top">
+  <text class="tit">待提醒</text>
+  <text class="how">2</text>
+</view>
+<view>
+  <block wx:for="{{content}}" > 
+    <navigator class="li">
+        <image src="{{item.img}}" mode="widthFix" class="img"></image>
+        <view class="fa">
+          <view class="txt">
+            <text>{{item.name}}</text>
+            <text class="label">{{item.label}}</text>
+          </view>
+           <view class="num">{{item.num}}</view>  
+        </view>
+    </navigator>
+  </block>
+</view>

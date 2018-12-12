@@ -1,0 +1,39 @@
+<!--pages/videoing/videoing.wxml-->
+<view class="win" bindtap="full">
+    <!-- 大照片 -->
+    <view class="{{tab==1?'video_doctor':'main'}}" bindtap='tabSwitch' data-id='0'>
+      <image class="img" src="{{video_doctor}}" ></image>
+    </view>
+    
+
+    <!-- 右上角小窗口 -->
+    <view  class="{{tab==1?'video_me':'small'}}" bindtap='tabSwitch' data-id='1'>
+      <image mode="widthFix" src="{{video_me}}"  class="img"></image>
+    </view>
+
+
+    <!-- 下面按钮集 -->
+    <view class="{{btnstatu==1?'bottom_videoing':'disappear'}}">
+      <view class="time">05：12</view>
+      <view class="btns">
+        <view class="button">
+          <view class="circle">
+            <image mode="widthFix" src="../../images/mute.png" class="circle_img"></image>
+          </view>
+          <view class="word">静音</view>
+        </view>
+        <view class="button">
+          <view class="circle">
+            <image mode="widthFix" src="../../images/close.png" class="circle_img"></image>
+          </view>
+          <view class="word">挂断</view>
+        </view>
+        <view class="button">
+          <view class="circle">
+            <image mode="widthFix" src="../../images/switch_camera.png" class="circle_img"></image>
+          </view>
+          <view class="word">切换摄像头</view>
+        </view>
+      </view>
+    </view>
+</view>

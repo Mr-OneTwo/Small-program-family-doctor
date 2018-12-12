@@ -1,0 +1,10 @@
+<!--pages/JuneNewAdded/scan/scan.wxml-->
+<view class="img_fa flex_center ">
+  <image src="../../../images/scan.png" class="img"></image>
+</view>
+<view class="btn_fa flex_center"> 
+  <navigator class="scan_btn" url="../signing/signing"  hover-class="none">扫一扫签约</navigator>
+</view>
+
+<navigator class="scan_input" url="../signInput/signInput"  hover-class="none">手动输入信息</navigator>
+<navigator class="record" url="../applicationRecord/applicationRecord"  hover-class="none">签约申请记录</navigator>

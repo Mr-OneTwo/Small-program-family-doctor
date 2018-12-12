@@ -1,0 +1,24 @@
+/* pages/JuneNewAdded/alert/alert.wxss */
+.mask{
+  position:absolute;
+  top:0;bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+  background:rgba(0,0,0,0.4);
+}
+.alert_wind{
+  width:500rpx;
+  height:270rpx;
+  background:#fff;
+ position:absolute;
+  top:0;bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+}
+.li{
+  line-height:88rpx;
+  text-align:center;
+  border-bottom:1rpx solid #ebebeb;
+}

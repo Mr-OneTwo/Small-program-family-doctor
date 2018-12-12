@@ -1,0 +1,54 @@
+/* pages/publicRemind/publicRemind.wxss */
+.top{
+  display:flex;
+  height:88rpx;
+  justify-content:space-between;
+  padding:0 24rpx;
+  align-items:center;
+  border-top:1rpx solid #DEDDE3;
+}
+.tit,.how{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+/* 列表 */
+.li{
+  background:#fff;
+  border-top:1rpx solid #DEDDE3;
+  padding:24rpx;
+  display:flex;
+  align-items:center;
+}
+.img{
+  width:80rpx;
+  border-radius:50%;
+  margin-right:24rpx;
+}
+.fa{
+  flex:1;
+  overflow:hidden;
+}
+.txt{
+  color:#333;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.label{
+  border:1rpx solid #3CD3B9;
+  border-radius:8rpx;
+  padding:0 5rpx;
+  display:inline-block;
+  font-size:24rpx;
+  line-height:30rpx;
+  margin-left:24rpx;
+  color:#3CD3B9;
+}
+.num{
+  color:#777;
+  font-size:26rpx;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}

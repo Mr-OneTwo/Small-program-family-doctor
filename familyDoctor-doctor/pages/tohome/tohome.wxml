@@ -1,0 +1,13 @@
+<!--pages/tohome/tohome.wxml-->
+<view>
+  <block wx:for="{{cont}}">
+    <navigator class="li arrow_right" url="{{item.url}}">
+        <view class="txt">
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.time}}</view>
+          <view class="describe">{{item.text}}</view>
+        </view>
+        <view class="right">{{item.right}}</view>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/label/label.wxml-->
+<view class="label_fa">
+  <block wx:for="{{label}}" wx:key="">
+    <view data-id='{{item.id}}' bindtap='label_click' class='{{item.statu==1?"active":""}}'>{{item.name}}</view>
+  </block>
+</view>
+
+<button class="btn" hover-class="btn_hover">完成</button>

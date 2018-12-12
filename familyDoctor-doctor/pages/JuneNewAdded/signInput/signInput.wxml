@@ -1,0 +1,17 @@
+<!--pages/login/login/login.wxml-->
+  <view class="content">
+    <view class="li">
+      <text class="tit">姓名</text>
+      <view class="input">
+        <input type="text" placeholder="请输入姓名" class="input_txt"></input>
+      </view>
+    </view>
+    <view class="li">
+      <text class="tit">身份证</text>
+      <view class="input">
+        <input type="password" placeholder="请输入身份证号码" class="input_txt"></input>
+        <image src="../../../images/scan.png" class="scan"></image>
+      </view>
+    </view>
+    <navigator class="btn" url="../signing/signing"  hover-class="none">下一步</navigator>
+  </view>

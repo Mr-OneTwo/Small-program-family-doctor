@@ -1,0 +1,24 @@
+<!--pages/video/video.wxml-->
+<view class="win">
+  <view class="infor">
+    <video src="../../images/doctor.png" class="portrait"></video> >
+    <view class="right">
+      <view class="name">付华</view>
+      <view>邀请你视频通话</view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="around">
+        <navigator class="circle" url="../healthAsk/healthAsk">
+          <video mode="widthFix" src="../../images/close.png" class="close_phone"></video>
+        </navigator>
+        <view class="cen">取消</view>
+    </view>
+    <view  class="around">
+        <navigator class="circle" url="../healthAsk/healthAsk">
+          <video mode="widthFix" src="../../images/video_white.png" class="close_phone"></video>
+        </navigator>
+        <view class="cen">接听</view>
+    </view>
+  </view>
+</view>

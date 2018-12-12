@@ -1,0 +1,49 @@
+/* pages/signAudit/signAudit.wxss */
+page{
+  padding-bottom:150rpx;
+}
+.card{
+  background:#fff;
+  border-bottom:1rpx solid #ebebeb;
+  border-top:1rpx solid #ebebeb;
+}
+/* 以下是第三部分  */
+
+.label_fa{
+  padding:24rpx 30rpx;
+}
+
+.btn{
+  width:100%;
+  line-height:90rpx;
+  background:#02CAAD;
+  color:white;
+  font-size:28rpx;
+  position:fixed;
+  bottom:0;
+}
+.sel{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:24rpx;
+}
+.sel view{
+  display:inline-block;
+  padding:10rpx 30rpx;
+  background:#F3F7F6;
+  color:#666;
+  margin:12rpx 15rpx;
+  border-radius:50rpx;
+    
+}
+.sel .active{
+  background:#02CAAD;
+  color:#fff;
+}
+.agree_fa{
+  margin:30rpx 24rpx;
+}
+.btn_hover{
+  background:#34AD9D;
+}

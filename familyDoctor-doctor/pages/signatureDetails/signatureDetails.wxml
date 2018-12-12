@@ -1,0 +1,44 @@
+<!--onlineSign.wxml-->
+<view class='onlineSign padding_b110'>
+      <view class='conlumn'>
+            <view class='list'>
+                <view class='title'>签约对象</view>
+                <view class='infor'>张三   男   45岁</view>
+            </view>
+            <view class='list'>
+                <view class='title'>家庭住址</view>
+                <view class='infor'>湖南省长沙市广厦新村221号</view>
+            </view>
+            <view class='list'>
+                <view class='title'>身份证</view>
+                <view class='infor'>43110219809098890</view>
+            </view>
+            <view class='list'>
+                <view class='title'>手机号码</view>
+                <view class='infor'>15608496396</view>
+            </view>
+            <view class='list'>
+                <view class='title'>签约时间</view>
+                <view class='infor'>2017年12月30日-2018年12月30日</view>
+            </view>
+      </view>
+      <view class='service_content'>
+            <view class='title'>服务内容</view>
+            <view class='content'>
+                  <view class='list'>
+                       <image src='../../images/online_sign1.png' class='img'></image>
+                       <view class='text_box'>
+                             <view class='big_title'>基本公共卫生服务</view>
+                             <view class='detail'>国家基本公共卫生服务项目和规定的其他公共卫生服务</view>
+                       </view>
+                  </view>
+                  <view class='list'>
+                       <image src='../../images/online_sign1.png' class='img'></image>
+                       <view class='text_box'>
+                             <view class='big_title'>基本医疗服务</view>
+                             <view class='detail'>常见病和多发病的中西医诊治、合理用药、就医路径指导和转诊预约等</view>
+                       </view>
+                  </view>
+            </view>
+      </view>
+</view>

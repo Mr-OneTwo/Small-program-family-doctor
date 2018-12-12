@@ -1,0 +1,77 @@
+<!--pages/selectionMechanism/selectionMechanism.wxml-->
+<import src="/wxSearch/wxSearch.wxml"/>
+<view class="fixed_fa">
+  <!-- 以下为搜索 -->
+   <view class="search_fa">
+        <import src="../../wxSearch/wxSearch.wxml" /> 
+          <view class="weui-search-bar"> 
+            <view class="weui-search-bar__form">   
+              <view class="weui-search-bar__box">     
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>     
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{wxSearchData.value}}"         bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" />     
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">       
+                <icon type="clear" size="14"></icon>     
+                </view>   
+            </view> 
+          </view> 
+        </view> 
+    </view> 
+
+    <!-- 以下为选项卡切换 -->
+
+  <scroll-view class="scroll-view_H" scroll-x>
+    <view wx:for="{{product}}" wx:key="ID" class="scroll-item {{currentTab==item.ID ? 'on' : ''}}" data-current="{{item.ID}}" bindtap="swichNav" wx:key="">{{item.TypeName}}</view>
+  </scroll-view> 
+</view>
+  <!-- 以下为内容页 -->
+<view class="box_fa"> 
+  <view wx:if="{{currentTab==0}}" class="box_week flex box box-lr"> 
+      <view class="flex box box-lr">
+        <scroll-view class="flex groups box box-tb" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+          <block wx:for="{{groups}}" wx:for-item="group" >
+            <view class="flex" id="{{group.groupName}}">
+              <view class="group-name">{{group.groupName}}</view>
+              <view class="flex group-users">
+                <navigator wx:for="{{group.users}}" wx:for-item="user" wx:for-index="idx" class="user box box-lr" url="../peopleHome/peopleHome">
+                  <view class="user-avatar box box-lr box-pack-center box-align-center">
+                    <image class="user-avatar-img" src="{{user.avatar}}"></image>
+                  </view>
+                  <view class="right">
+                    <view class="name">{{user.name}}
+                      <text class="label">{{user.label}}</text>
+                    </view>
+                    <view class="num">{{user.num}}</view>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+
+        <view class="nav box box-tb" bindtouchmove="touchmove" bindtouchcancel="touchcancel" bindtouchend="touchend">
+          <view bindtap="tabLetter" data-index="{{item}}" wx:for="{{letters}}" class="flex letter">
+            <text class="letter-text {{selected == item ? 'letter-actived' : ''}}">{{item}}</text>
+          </view>
+        </view>
+        
+      </view>
+     
+   
+ </view>
+
+  <view wx:if="{{currentTab==1}}" class="box_week"> 
+    二页
+  </view>
+  <view wx:if="{{currentTab==2}}" class="box_week"> 
+    三页
+  </view>
+  <view wx:if="{{currentTab==3}}" class="box_week"> 
+    四页
+  </view>
+  <view wx:if="{{currentTab==4}}" class="box_week"> 
+    五页
+  </view>
+  <view wx:if="{{currentTab==5}}" class="box_week"> 
+    六页
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/noDta/noData.wxml-->
+<view>
+  <view class="noData_fa">
+    <image mode="widthFix" class="noData" src="../../images/noData.png"></image>
+  </view>
+  <view class="noData_txt">暂无数据</view>
+</view>

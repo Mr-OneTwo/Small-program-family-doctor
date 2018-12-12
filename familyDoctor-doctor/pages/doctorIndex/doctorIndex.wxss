@@ -1,0 +1,94 @@
+/* pages/doctorIndex/doctorIndex.wxss */
+page{
+  padding-bottom:115rpx;
+}
+.first{
+  margin-bottom:24rpx;
+}
+.card{
+  background:#fff;
+  padding:24rpx;
+  position:relative;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  border-bottom:1rpx solid #EDEDED;
+}
+.img{
+  width:80rpx;
+  border-radius:50%;
+  margin-right:24rpx;
+}
+.right{
+  flex:1;
+  overflow:hidden;
+}
+.fir{
+  font-size:30rpx;
+}
+.fir,.sec,.time{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.sec,.time{
+  color:#9E9E9E;
+}
+.blue{
+  color:#73BEEB;
+}
+.label{
+  margin-right:10px;
+  background:red;
+  padding:3rpx 15rpx;
+  color:#fff;
+  border-radius:50rpx;
+  font-size:22rpx;
+} 
+.second .fir{
+  margin-right:120rpx;
+}
+.other{
+  position:absolute;
+  right:24rpx;
+  top:18rpx;
+  width:196rpx;
+  display:flex;
+  justify-content:flex-end;
+  bottom:12rpx;
+}
+.sec_label{
+  background:red;
+  padding:3rpx 15rpx;
+  color:#fff;
+  border-radius:50rpx;
+  font-size:22rpx;
+}
+
+
+.one{
+  line-height:50rpx;
+  display:flex;
+}
+.one .name{
+  flex:1;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.one .time{
+  color:#9E9E9E;
+  text-align:right;
+}
+.two{
+  display:flex;
+  height:40rpx;
+  align-items:center;
+}
+.two .dialogue{
+  color:#9E9E9E;
+  flex:1;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

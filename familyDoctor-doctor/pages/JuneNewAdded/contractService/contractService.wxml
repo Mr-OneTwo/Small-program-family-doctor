@@ -1,0 +1,36 @@
+
+  <!-- 以下为搜索 -->
+          <view class="weui-search-bar"> 
+            <view class="weui-search-bar__form">   
+              <view class="weui-search-bar__box">     
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>     
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{wxSearchData.value}}"         bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" />     
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">       
+                <icon type="clear" size="14"></icon>     
+                </view>   
+            </view> 
+          </view> 
+        </view>
+<view class="content">
+  <view class="leftmenu">
+     <view>
+         <scroll-view scroll-y="true" class='left'>
+              <view wx:for="{{types}}" data-id="{{item.id}}" bindtap="tapType" class="{{item.id == currType ? 'li_active' : 'li'}}">
+                 <view class="fir_tittle">{{item.name}}</view>
+                 <view class="sec_tittle">{{item.txt}}</view>
+              </view>
+         </scroll-view>
+     </view>
+  </view>
+  <view class="submenu">
+      <view scroll-y="true" class='ul'>
+        <view wx:for="{{right}}" data-id="{{item.id}}" bindtap="imgclick" class="lit">
+             <view class="name">
+                  <view class="fir_tittle">{{item.firtit}}</view>
+                  <view class="sec_tittle">{{item.sectxt}}</view> 
+              </view>
+              <image class="icon"  src='{{item.label==1 ? "../../../images/active.png" : ""}}'></image>
+        </view>
+      </view>
+  </view>
+</view>

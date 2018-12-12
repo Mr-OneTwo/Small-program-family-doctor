@@ -1,0 +1,28 @@
+<!--pages/signManagment/signManagment.wxml-->
+<view>
+  <navigator class="card arrow_right" url="../applicationDetails/applicationDetails">
+    <image src="../../../images/fuhua.png" class="headPortrait"></image>
+    <view class="right">
+      <view class="name">张三 <text>431102198629098412</text></view>
+      <view class="num">2017年12月31日-2018年12月28日</view>
+    </view>
+    <navigator hover-class="none" class="agree">审核中</navigator>
+  </navigator>
+  <navigator class="card arrow_right" url="../applicationDetails/applicationDetails">
+    <image src="../../../images/fuhua.png" class="headPortrait"></image>
+    <view class="right">
+      <view class="name">王五 <text>431102198629098412</text></view>
+      <view class="num">2017年12月31日-2018年12月28日</view>
+    </view>
+    <navigator hover-class="none" class="agree">审核通过</navigator>
+  </navigator>
+  <navigator class="card arrow_right" url="../applicationDetails/applicationDetails">
+    <image src="../../../images/fuhua.png" class="headPortrait"></image>
+    <view class="right">
+      <view class="name">王五 <text>431102198629098412</text></view>
+      <view class="num">2017年12月31日-2018年12月28日</view>
+    </view>
+    <navigator hover-class="none" class="agree">审核不通过</navigator>
+  </navigator>
+ 
+</view>

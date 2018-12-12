@@ -1,0 +1,12 @@
+
+<!-- 第三部分 -->
+<view class="card">
+  <view class='sel'>
+    <block wx:for="{{floor1}}" wx:key="">
+        <view data-id='{{item.id}}' bindtap='chooseFloor1' class='{{item.statu==1?"active":""}}'>{{item.name}}</view>
+    </block>
+  </view>
+ 
+</view>
+
+<button class="btn" hover-class="btn_hover">同意签约</button>

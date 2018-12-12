@@ -1,0 +1,366 @@
+/* pages/healthAdvisory/healthAdvisory.wxss */
+
+
+.advisory{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow-y: auto;
+}
+.img{
+  width:80rpx;
+  height:80rpx;
+}
+.head_information{
+  background:#fff;
+  height:100rpx;
+  border-top:1rpx solid #F4F4F4;
+  display:flex;
+  align-items:center;
+  padding:0 24rpx;
+  position:fixed;
+  width:100%;
+  top:0;
+  box-sizing:border-box;
+  box-shadow:0 2rpx 3rpx 3rpx #DEDDE2;
+  z-index:99;
+}
+.information{
+  position:absolute;
+  left:130rpx;
+  right:300rpx;
+  top:0;
+  bottom:0;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  color:#666;
+  line-height:100rpx;
+}
+.label{
+ position:absolute;
+ right:40rpx;
+ overflow:hidden;
+ width:260rpx;
+ white-space:nowrap;
+ text-align:right;
+ line-height:100rpx;
+}
+.label_li{
+  border:1rpx solid #38D4BE;
+  border-radius:8rpx;
+  padding:5rpx 10rpx;
+  color:#38D4BE;
+  font-size:22rpx;
+  margin-right:12rpx;
+}
+.bold{
+  color:#40D2BA;
+}
+/* 头部结束 */
+.time{
+  text-align:center;
+  margin-top:24rpx;
+}
+.time .cen{
+  background:#D2D2D2;
+  color:#fff;
+  font-size:22rpx;
+  padding:5rpx 10rpx;
+  border-radius:8rpx;
+}
+.dialogue_me{
+  display:flex;
+  padding-right:24rpx;
+  margin:24rpx 0 24rpx 128rpx;
+}
+
+.me{
+  flex:2;
+  justify-content:flex-end;
+  display:flex;
+}
+.mess_me{
+  flex:8;
+  display:flex;
+  align-items:center;
+}
+.unread{
+  display:inline-block;
+  width:15rpx;
+  height:15rpx;
+  background:red;
+  border-radius:50%;
+  margin-right:10rpx;
+}
+/* 小三角 */
+.mess_me{
+  position:relative;
+  display:flex;
+  justify-content:flex-end;
+  }
+.mess_me:after{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 12rpx solid #38D4BE;
+  border-color: transparent transparent transparent #38D4BE;
+  right:-20rpx;
+  top:28rpx;
+  }
+  
+.mess_me_txt{
+  border-radius:8rpx;
+  padding:0 16rpx;
+  background:#38D4BE;
+  line-height:80rpx;
+  min-height:80rpx;
+  min-width:200rpx;
+  display:inline-block;
+  border-bottom:1rpx solid #34AD9D;
+}
+.voice_me{
+  position:absolute;
+  right:12rpx;
+  width:25rpx;
+  top:27rpx;
+}
+
+/* 以下是发送图片样式 */
+
+.send_img_me{
+  flex:8;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+.face_img{
+  width:300rpx;
+  border-radius:8rpx;
+}
+
+.send_img_his{
+  display:block;
+  position:relative;
+  flex:8;
+}
+/* 以上是发送图片样式 */
+
+
+/* 以下为对方聊天样式 */
+
+.dialogue_his{
+  display:flex;
+  padding-left:24rpx;
+  margin-right:128rpx;
+  margin-top:24rpx;
+}
+.peo_img{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.his{
+  flex:2;
+}
+.mess_his{
+  flex:8;
+}
+.mess_his{
+  display:block;
+  position:relative;
+  }
+.mess_his_txt{
+  border-radius:8rpx;
+  padding:18rpx 16rpx;
+  background:#fff;
+  min-width:200rpx;
+  display:inline-block;
+  border-bottom:1rpx solid #ddd;
+}
+.mess_his:after{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 12rpx solid #fff;
+  border-color: transparent #fff transparent transparent ;
+  left:-20rpx;
+  top:28rpx;
+  }
+.mess_his{
+  display:block;
+  position:relative;
+  }
+
+.voice{
+  position:absolute;
+  left:12rpx;
+  width:25rpx;
+  top:27rpx;
+}
+/* 以下为卡片提醒 */
+.card{
+  background:#fff;
+  width:90%;
+  border-radius:20rpx;
+  margin:24rpx auto;
+  box-shadow:0rpx 2rpx 3rpx 3rpx #DEDDE2;
+}
+.tit{
+  line-height:90rpx;
+  padding:0 24rpx;
+  border-bottom:1rpx solid #F2F2F2;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  color:#666;
+}
+.content{
+  line-height:60rpx;
+  padding:0 30rpx;
+  font-size:27rpx;
+}
+.btn_fa{
+  border-top:1rpx solid #F2F2F2;
+  padding:24rpx;
+  justify-content: flex-end;
+  display:flex;
+}
+.btn{
+  border:1rpx solid #37D3BD;
+  border-radius:8rpx;
+  color:#fff;
+  display:inline-block;
+  font-size:24rpx;
+  background:#37D3BD;
+  padding:0 10rpx;
+  outline:none;
+  min-width:90rpx;
+}
+.abnormal_fa{
+  padding:0 30rpx;
+  position:relative;
+}
+.abnormal{
+  float:left;
+}
+.right{
+  float:left;
+  padding-left:10rpx;
+}
+.red{
+  color:red;
+}
+
+/* 以下是输入框 */
+.put{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#F5F5F5;
+  z-index:99;
+}
+.input_fa{
+  margin:24rpx 150rpx 0 24rpx;
+  background:#fff;
+  border-radius:8rpx;
+  height:50rpx;
+  max-height:300rpx;
+  padding:12rpx 24rpx;
+  position:relative;
+}
+.send{
+  background:#37D3BD;
+  color:white;
+  border-radius:8rpx;
+  font-size:23rpx;
+  position:absolute;
+  right:-124rpx;
+  padding:0 24rpx;
+  top:9rpx;
+  line-height:60rpx;
+}
+.send_hover{
+  background:#34AD9D;
+}
+.input{
+  height:100%;
+  width:100%;
+}
+.box_fa{
+  display:flex;
+  height:100rpx;
+  width:100%;
+  align-items:center;
+}
+.function{
+  flex:1;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.img{
+  width:60rpx;
+  height:60rpx;
+}
+
+
+
+.content_fa{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:200rpx;
+  top:100rpx;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;/* 解决ios滑动不流畅问题 */
+}
+.content_fa_voice{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:500rpx;
+  top:0;
+  overflow:auto;
+  padding-top:100rpx;
+}
+/* 以下为语音按住输入样式 */
+
+.voice_record_img{
+  width:150rpx;
+}
+.voice_txt{
+  text-align:center;
+  padding:30rpx 0;
+  color:#7c7c7c;
+}
+.voice_img_fa{
+  display:flex;
+  justify-content:center;
+  padding-bottom:60rpx;
+}
+
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box { 
+  background:white;
+  position: relative;
+  z-index: 9999;
+}

@@ -1,0 +1,2 @@
+/* pages/videoing/videoing.wxss */
+@import "../video/video.wxss";

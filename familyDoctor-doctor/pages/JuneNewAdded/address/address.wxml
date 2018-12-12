@@ -1,0 +1,16 @@
+<!--pages/login/login/login.wxml-->
+  <view class="content">
+    <view class="li arrow_right">
+      <text class="tit">所在地区</text>
+      <view class="input ">
+        <input type="text"  placeholder="请选择" class="input_txt"></input>
+      </view>
+    </view>
+    <view class="li">
+      <text class="tit">详细地址</text>
+      <view class="input">
+        <input type="password" placeholder="详细地址、街道、楼层等" class="input_txt"></input>
+      </view>
+    </view>
+    <button class="btn" hover-class="btn_hover">确定</button>
+  </view>

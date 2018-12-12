@@ -1,0 +1,16 @@
+<!--pages/gotohome/gotohome.wxml-->
+<view class="top">
+  <text class="tit">待提醒</text>
+  <text class="how">2</text>
+</view>
+<view>
+  <block wx:for="{{cont}}">
+    <navigator class="li ">
+        <view class="txt">
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.time}}</view>
+          <view class="describe">{{item.text}}</view>
+        </view>
+    </navigator>
+  </block>
+</view>

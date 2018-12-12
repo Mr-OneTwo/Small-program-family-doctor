@@ -1,0 +1,156 @@
+/* pages/peopleHome/peopleHome.wxss */
+.top{
+  padding:24rpx;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  border-bottom:1rpx solid #ebebeb;
+  align-items:center;
+  }
+.doctor{
+  width:80rpx;
+  margin-right:24rpx;
+  border-radius:50%;
+  }
+.bac{
+  position:absolute;
+  z-index:-1;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  }
+.right{
+ flex:1;
+ overflow:hidden;
+ }
+.name{
+  font-size:30rpx;
+  color:#333;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  }
+  .address{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  }
+.name>.work{
+  font-size:26rpx;
+  color:#666;
+  margin-left:10px;
+  }
+.address .label{
+  border:1rpx solid #38D4BE;
+  border-radius:8rpx;
+  padding:5rpx 10rpx;
+  color:#38D4BE;
+  font-size:22rpx;
+  margin-right:24rpx;
+}
+/* 头部结束 */
+.content{
+  background:#fff;
+  box-shadow:0 2rpx 3rpx 3rpx #ddd;
+}
+.lavel_fa{
+  height:90rpx;
+  display:flex;
+  align-items:center;
+  padding:0 24rpx;
+  margin-top:24rpx;
+  border-bottom:1rpx solid #D2D7DA;
+  border-top:1rpx solid #f8f8f8;
+  background:#fff;
+}
+.title{
+  height:90rpx;
+  display:flex;
+  align-items:center;
+  padding:0 24rpx;
+  margin-top:24rpx;
+  border-bottom:1rpx solid #F4F4F4;
+  border-top:1rpx solid #F4F4F4;
+}
+.vertical_line{
+  width:6rpx;
+  height:28rpx;
+  background:#73BEFE;
+  display:inline-block;
+  margin-right:12rpx;
+  border-bottom:1rpx solid #F8F8F8;
+}
+.health{
+  width:85%;
+  margin:34rpx auto;
+  border-left:1rpx solid #E2E2E2;
+  position:relative;
+}
+.li{
+  height:75rpx;
+  display:flex;
+  align-items:center;
+  position:relative;
+  left:-5rpx;
+}
+.time{
+  color:#9A9A9A;
+  width:200rpx;
+  display:inline-block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.li_cont{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  position:absolute;
+  left:230rpx;
+  right:0;
+}
+.dian{
+  display:inline-block;
+  width:10rpx;
+  height:10rpx;
+  border-radius:50%;
+  background:#E2E2E2;
+  margin-right:30rpx;
+}
+.more{
+  border-top:1rpx solid #F4F4F4;
+  height:90rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#999;
+}
+.to_bottom{
+  width:28rpx;
+  margin-left:24rpx;
+}
+
+/* 底部按钮 */
+.bottom_btn{
+  width:100%;
+  height:90rpx;
+  display:flex;
+  border-top:1rpx solid #37D3BD;
+  position:fixed;
+  bottom:0;
+}
+.referral,.mess{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+}
+.referral{
+  background:white;
+  color:#37D3BD;
+}
+.mess{
+  background:#37D3BD;
+  color:white;
+}

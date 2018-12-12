@@ -1,0 +1,30 @@
+/* pages/evaluat/evaluat.wxss */
+
+/**evaluatDoctor.wxss**/
+.evaluatDoctor{background-color: #fff; margin-top: 30rpx;}
+.list{border-bottom: 1px solid #eeeeee; padding: 24rpx;display: flex; align-items: center;}
+
+.star-image{
+  display: inline-block;
+  width: 36rpx;
+  height: 36rpx;
+}
+.zan-c-gray-dark{
+  width: 36rpx;
+  float:left;
+}
+.text-star{
+  width: 80rpx;
+}
+.guding{
+  width: 36rpx;
+  float:left;
+}
+.mystar{
+  float:left
+} 
+.pj_stars{
+  float:left;
+  margin-left:20px
+} 
+.star_img{position:relative;padding-right: .5em;font-size:40rpx}

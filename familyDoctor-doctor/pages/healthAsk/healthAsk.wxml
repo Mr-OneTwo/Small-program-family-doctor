@@ -1,0 +1,171 @@
+<!--pages/healthAdvisory/healthAdvisory.wxml-->
+<view class="advisory">
+  <navigator class="head_information arrow_right">
+      <image src="../../images/fuhua.png" class="peo_img"></image>
+      <view class="information">
+          <b class="bold">付华 </b>  男 34岁
+      </view>
+      <view class="label">
+        <text class="label_li">糖尿病</text>
+      </view>
+  </navigator>
+  <!-- 头部结束 -->
+
+  
+  <view class="{{statu==1?'content_fa_voice':'content_fa'}}">
+    <view class="time"><text class="cen">2017-12-2 13:00</text></view>
+    <!-- 以上为当前时间 -->
+    <view class="dialogue_his">
+      <view class="his clear"><image src="../../images/fuhua.png" class="peo_img"></image></view>
+      <view class="mess_his"><text class="mess_his_txt">最近头疼，起床感觉眩晕</text></view>
+    </view>
+    <!-- 以上对方对话 --><view class="dialogue_me">
+      <view class="mess_me">
+        <text class="mess_me_txt">11</text>
+      </view>
+      <view class="me clear">
+        <image src="../../images/doctor.png" class="peo_img"></image>
+      </view>
+    </view> 
+
+    <view class="dialogue_me">
+      <view class="mess_me">
+        <text class="miao">7〃</text>
+        <text class="mess_me_txt"></text>
+        <image src="../../images/voice-white.png" mode="widthFix" class="voice_me"></image>
+      </view>
+      <view class="me clear">
+        <image src="../../images/doctor.png" class="peo_img"></image>
+      </view>
+    </view>
+
+
+    <view class="dialogue_me">
+      <view class="mess_me" bindtap='play'>
+        <block wx:for="{{unread}}" wx:key="">
+          <text class='{{item.statu == 0?"unread":""}}'></text>
+        </block>
+        <text class="miao">7〃</text>
+        <text class="mess_me_txt"></text>
+        <block wx:for="{{voice}}" wx:key="" >
+          <image src="{{item.img}}"  mode="widthFix"  class="voice_me" ></image>
+        </block>
+      </view>
+      <view class="me clear">
+        <image src="../../images/doctor.png" class="peo_img"></image>
+      </view>
+    </view>
+    
+    
+     <!-- 以下为图片发送 -->
+    <view class="dialogue_me">
+      <view class="send_img_me">
+        <view class="send_img_fa">
+          <image mode="widthFix" src="{{face_img}}" class="face_img"></image>
+        </view>
+      </view>
+      <view class="me clear"><image src="../../images/doctor.png" class="peo_img"></image></view>
+    </view>
+
+     <view class="dialogue_his">
+      <view class="his clear"><image src="../../images/fuhua.png" class="peo_img"></image></view>
+      <view class="send_img_his">
+        <view class="send_img_fa">
+          <image mode="widthFix" src="{{face_img_his}}" class="face_img"></image>
+        </view>
+      </view>
+    </view>
+
+    <!-- 以上为图片发送 -->
+
+
+    <!-- 以上为自己 -->
+      <view class="time"><text class="cen">11:55</text></view>
+      <view class="card">
+          <view class="tit"> <b class="bold">[健康提醒]</b> Ta近期有糖尿病随访，请关注</view>
+          <view>
+            <view class="content">计划日期： <text>2018年1月10日到2018年2月1日 </text></view>
+            <view class="content">计划内容： <text>糖尿病随访 （第四次）</text></view>
+          </view>
+          <view class="btn_fa clear">
+            <button class="btn" hover-class="send_hover">提醒Ta</button>
+          </view>
+      </view>
+      <view class="card">
+          <view class="tit"><b class="bold">[健康提醒]</b> 发现Ta有异常指标，请关注</view>
+          <view>
+            <view class="content">异常日期： <text>2017年12月31日 </text></view>
+            <view class="content">异常来源： <text>糖尿病随访</text></view>
+            <view class="abnormal_fa  clear">
+              <view class="abnormal" >异常指标：</view>
+              <view class="right">
+                <view>空腹血糖 <b class="red">↑</b> 11.1mmol/L</view>
+                <view>餐后血糖 <b class="red">↑</b> 16.1mmol/L</view>
+              </view>
+            </view>
+          </view>
+          <view class="btn_fa clear">
+            <button class="btn" hover-class="send_hover">提醒Ta</button>
+          </view>
+      </view>
+      <view class="card">
+          <view class="tit"><b class="bold"> <b class="bold">[健康提醒]</b></b> 门诊</view>
+          <view>
+            <view class="content">就诊日期： <text>2017年12月31日 </text></view>
+            <view class="content">就诊机构： <text>糖尿病随访</text></view>
+            <view class="content">就诊科室： <text>消化内科</text></view>
+          </view>
+          <view class="btn_fa clear">
+            <button class="btn" hover-class="send_hover">查看</button>
+          </view>
+      </view>
+      <view class="card">
+          <view class="tit"><b class="bold">[健康提醒]</b> 高血压随访</view>
+          <view>
+            <view class="content">服务日期： <text>2017年10月01日 </text></view>
+            <view class="content">服务机构： <text>中南大学湘雅三医院</text></view>
+            <view class="content">服务内容： <text>高血压随访</text></view>
+          </view>
+          <view class="btn_fa clear">
+            <button class="btn" hover-class="send_hover">查看</button>
+          </view>
+      </view>
+  </view>
+    <!-- 内容完成 -->
+
+    <!-- 以下为输入框 -->
+  <view class="put">
+    <view class="input_fa">
+      <input class="input" cursor-spacing="50"></input>
+      <button class="send" hover-class="send_hover">发送</button>
+    </view>
+    <view class="box_fa">
+
+        <view hover-class="none" class="function" bindtap='showModal'>
+            <image src="../../images/voice.png" mode="widthFix" class="img" wx:if="{{statu==0}}"></image>
+            <image src="../../images/voice_2.png" mode="widthFix" class="img" wx:if="{{statu==1}}"></image>
+        </view>
+
+        <navigator hover-class="none" class="function" url="../videoInvite/videoInvite">
+          <image src="../../images/picture.png" mode="widthFix" class="img"></image>
+        </navigator>
+        <navigator hover-class="none" class="function" url="../videoing/videoing">
+          <image src="../../images/phone.png" mode="widthFix" class="img"></image>
+        </navigator>
+        <navigator hover-class="none" class="function" url="../video/video">
+          <image src="../../images/video.png" mode="widthFix" class="img"></image>
+        </navigator>
+        <navigator hover-class="none" class="function" url="../healthRemind/healthRemind">
+          <image src="../../images/healthRemind.png" mode="widthFix" class="img"></image>
+        </navigator>
+    </view>
+     <!-- 以下为语音按住输入样式  -->
+    <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+    <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <view class="voice_txt">按住说话</view>
+        <view class="voice_img_fa">
+            <image src="../../images/voice_record.png" mode="widthFix" class="voice_record_img"></image>
+        </view>  
+    </view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+<!--pages/signAudit/signAudit.wxml-->
+<view class="card">
+  <view class="li">
+    <text class="fir">签约对象</text>
+    <text class="sec">张三  男  45岁</text>
+  </view>
+  <view class="li">
+    <text class="fir">家庭住址</text>
+    <text class="sec">湖南省长沙市广厦新村221号</text>
+  </view>
+  <view class="li">
+    <text class="fir">身份证</text>
+    <text class="sec">43110219809098890</text>
+  </view>
+  <view class="li">
+    <text class="fir">手机号码</text>
+    <text class="sec">15608486339</text>
+  </view>
+</view>
+<view class="card">
+  <view class="title"><text class="vertical_line"></text>健康档案</view>
+  <view class="health">
+    <view class="li_fa">
+      <text class="dian"></text>
+      <text class="time">2018.01.01 </text>
+      <text class="li_cont">高血压随访</text>
+    </view>
+    <view class="li_fa">
+      <text class="dian"></text>
+      <text class="time">2018.12.31</text>
+      <text class="li_cont">门诊</text>
+    </view>
+    <view class="li_fa">
+      <text class="dian"></text>
+      <text class="time">2018.10.03</text>
+      <text class="li_cont">住院</text>
+    </view>
+  </view>
+  <navigator class="more" url="">显示更多
+    <image src="../../images/to_more.png" class="to_bottom" mode="widthFix"></image>
+  </navigator>
+</view>
+<!-- 第三部分 -->
+<view class="card">
+  <view class="title"><text class="vertical_line"></text>设置重点人群标签</view>
+  <view class='sel'>
+    <block wx:for="{{floor1}}" wx:key="">
+        <view data-id='{{item.id}}' bindtap='chooseFloor1' class='{{item.statu==1?"active":""}}'>{{item.name}}</view>
+    </block>
+  </view>
+ 
+</view>
+<view class="agree_fa clear"> 
+   <label class="check"><checkbox value="" class="cbox"/></label><view class="tit"><text class="tit">我已阅读并同意</text><navigator  url="../protocol/protocol"  class='txt' hover-class="none" >《家庭医生签约协议》</navigator></view>
+</view>
+
+<button class="btn" hover-class="btn_hover">同意签约</button>

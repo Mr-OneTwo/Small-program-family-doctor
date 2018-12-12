@@ -1,0 +1,44 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wx75dc892ac1ab846a",
+	"projectname": "%E5%8C%BB%E7%94%9F%E7%89%88-svn",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "上门服务审批",
+					"pathName": "pages/tohome/tohome",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "签约审核",
+					"pathName": "pages/signAudit/signAudit",
+					"query": ""
+				}
+			]
+		}
+	}
+}
